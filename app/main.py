@@ -33,7 +33,7 @@ def new_info():
 
 
 @app.route("/operation", methods = ['GET'])
-def operation(): 
+def operate(): 
     global operation 
     return operation
 
