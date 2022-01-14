@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 last_info = "There were no info yet"
 operation = 0
-with open("operation.txt", 'r') as fin:
+with open("app/operation.txt", 'r') as fin:
     operation = fin.readline()
     operation = operation.rstrip()
 
@@ -23,7 +23,7 @@ def new_info():
                 operation = '2'
             else:
                 operation = '1'
-            with open("operation.txt", 'w') as fout:
+            with open("app/operation.txt", 'w') as fout:
                 fout.write(operation)
         
         else:
