@@ -17,3 +17,8 @@ def new_info():
 
 
 
+@app.route("/operation", methods = ['GET'])
+def operation():  
+    return "1"
+
+
