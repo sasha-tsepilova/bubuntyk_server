@@ -18,7 +18,7 @@ def new_info():
     global last_info
     if request.method == 'POST':
         last_info= request.args.get("info",'')
-        last_info.replace('^',',')
+        last_info = last_info.replace('^',',')
     return last_info
 
 
